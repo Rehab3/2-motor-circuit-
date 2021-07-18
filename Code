@@ -1,0 +1,23 @@
+// C++ code
+//
+void setup()
+{
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(3, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(7, HIGH);
+  digitalWrite(4, LOW);
+  analogWrite(10, 50);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(3, HIGH);
+  digitalWrite(5, LOW);
+  analogWrite(11, 50);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
